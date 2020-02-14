@@ -1,0 +1,15 @@
+pris = 50
+tekst = input("Skriv inn alder: ")
+alder = int(tekst)
+
+if alder < 12 or alder > 67:
+    print("Du må betale", pris*0.5, "kr")
+else:
+    print("Du må betale", pris, "kr")
+
+1. variabel "pris" får verdi 50 (integer)
+2. variabel "tekst" får verdi fra brukeren (streng)
+3. variabel "alder" får verdi av variabelen "tekst" konvertert til integer (tall)
+4. If-setning som sjekker om alder (altså brukerinput) er mindre enn 12 eller om alder er høyere enn 67.
+- Om det er det, printes ut "Du må betale," variabelen pris som har verdi 50, ganger 0.5 (> 25) "kr"
+5. ellers printes ut "Du må betale" variabelen pris som har verdi 50 (>50) "kr"
