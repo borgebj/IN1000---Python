@@ -1,0 +1,14 @@
+- Oblig 7 - Oppgave 3 - (borgebj) - 
+
+b) Årsaken er fordi sangene som blir lagt til denne listen er objekter som refererer til klassen Sang fra sang.py. 
+Ordbøker inneholder en nøkkelverdi og en innholdsverdi, den holder altså styr på 2 og 2 elementer.
+
+- Siden listen inneholder en rekke med objekter, trenger de ikke å "binde seg" med et annet element.
+Man kunne skrevet i en ordbok {"artist":"tittel", "artist2":"tittel2"} osv, men siden vi trenger å bruke disse elementene som argument 
+i andre klasser, er det enklere å bruke en liste som inneholder objekter.
+- Også fordi elementene i listen, altså objektene "sang" er alle sammen objekter av samme navn. Alle heter "Sang", men refererer til samme metode med ulike argumenter. 
+
+
+c) Ulempen med å ha filnavn som parameter i konstruktøren til klassen Spilleliste vil gå litt ut på fleksibiliteten til klassen. Hvis man har filnavn som parameter i konstruktøren vil det 
+si at man må ha en fil på forhånd, men har vi en metode som gjør dette istenden kan vi senere legge til denne filen.
+
