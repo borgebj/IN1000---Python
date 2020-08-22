@@ -24,7 +24,6 @@ class Hangman:
         else: return []
 
 
-
     def opprettTemp(self):
         for ord in self._fullSetning:
             self._tempSetning.append("_ ")
