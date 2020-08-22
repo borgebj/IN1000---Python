@@ -1,0 +1,25 @@
+sykkel, 2500
+bamse, 50
+bestikk, 150
+datamaskin, 5000
+Airpods, 1600
+stol, 500
+lekebil, 200
+telefon, 4000
+julekalender, 80
+ledning, 50
+hviskelaer, 20
+blyant, 10
+dopapir, 40
+tegneseriebok, 199
+te, 80
+Airpods pro, 3000
+jakke, 500
+bukse, 200
+vott, 20
+lue, 40
+bayblade, 30
+brannbil, 70
+lego, 400
+spotify premium, 100
+

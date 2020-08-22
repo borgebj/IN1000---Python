@@ -1,0 +1,3 @@
+Suppe  50  gulrot, polse, potet, erter
+Toast  30  brod, smor, ost
+Knekkebrod  15  knekkebrod, skinke, ost, smor

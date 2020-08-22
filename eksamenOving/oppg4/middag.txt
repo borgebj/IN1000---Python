@@ -1,0 +1,3 @@
+Hamburger  100  ost, brod, ketchup, kjott
+Pizza  115  sopp, ketchup, saus, pepperoni
+Biff  140  kjott, potet, salt

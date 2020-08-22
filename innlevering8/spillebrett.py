@@ -103,7 +103,7 @@ class Spillebrett:
         return antallLevende
 
     #Instansmetode som endrer statusen til en celle tilfeldig
-    def generer(self) :
+    def generer(self):
         #variabel som tar imot et tilfeldig tall fra 0 til 2
         tall = randint(0, 2)
         #variabel som holder på Celle-objekt fra klassen Celle

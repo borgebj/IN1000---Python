@@ -1,0 +1,3 @@
+Brod  5  brod, ost, smor, skinke
+Egg & bacon  20  egg, bacon, kjott
+Eggerore  30  egg, brod, smor, lok

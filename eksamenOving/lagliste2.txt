@@ -1,0 +1,3 @@
+molde brann 2 5
+brann sarpsborg 5 5
+molde sarpsborg 2 1
