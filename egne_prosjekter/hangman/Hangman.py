@@ -3,16 +3,15 @@ import sys
 
 class Hangman:
     def __init__(self, valg):
-        self._fullSetning = []
         self._tempSetning = []
-        self._antForsok = 6
+        self._feilOrd = []
+        self._antForsok = 8
         self._gjettet = False
-        self._fullSetning = liste = self.hentListe(valg.lower())
+        self._fullSetning = self.hentListe(valg.lower())
 
-        if (len(liste)<=0):
+        if (len(self._fullSetning)<=0):
             print(valg, "er ikke et valg")
             sys.exit()
-        self._fullSetning = liste
 
         self.opprettTemp()
         self.displayTemp()
@@ -31,19 +30,20 @@ class Hangman:
         print()
         if (self._antForsok < 1):
             print("-------  ")
-        if (self._antForsok < 3):
+        if (self._antForsok < 2):
             print("|     |  ")
         if (self._antForsok < 4):
             print("|     O  ")
-        if (self._antForsok < 5):
-            print("|    /--\ ")
         if (self._antForsok < 6):
+            print("|    /--\ ")
+        if (self._antForsok < 8):
             print("|     /\  ")
         print()
 
 
     def displayTemp(self):
-        print("\n\nDu har", self._antForsok, "antall forsok\n")
+        print("\n\nDu har", self._antForsok, "antall forsok")
+        print(self._feilOrd,"\n")
         self.displayMan()
         for ord in self._tempSetning:
             print(ord, end="")
@@ -57,6 +57,7 @@ class Hangman:
             for indeks in revealIndekser:
                 self._tempSetning[indeks] = bokstav+" "
         else:
+            self._feilOrd.append(bokstav)
             self._antForsok -= 1
             print("\n\n", bokstav, "er feil")
         if "_ " not in self._tempSetning:
@@ -72,8 +73,6 @@ class Hangman:
     def hentOrd(self):
         return self._fullSetning
 
-
-
 def hovedprogram():
     valg = input("\n\nHvilken vanekslighetsgrad? (enkelt/vanskelig): ")
     hangman = Hangman(valg)
@@ -87,6 +86,5 @@ def hovedprogram():
         print("Ordet var:", hangman.hentOrd(), "\n")
     elif hangman.hentGjettet():
         print("\nDu vant!\n")
-
 
 hovedprogram()
