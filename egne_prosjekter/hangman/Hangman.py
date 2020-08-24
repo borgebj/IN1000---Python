@@ -1,4 +1,4 @@
-from random import randint
+import random
 import sys
 
 class Hangman:
@@ -7,20 +7,19 @@ class Hangman:
         self._tempSetning = []
         self._antForsok = 6
         self._gjettet = False
-        liste = self.hentListe(valg.lower())
+        self._fullSetning = liste = self.hentListe(valg.lower())
 
         if (len(liste)<=0):
             print(valg, "er ikke et valg")
             sys.exit()
-        else:
-            self._fullSetning = liste[randint(1, len(liste)-1)]
+        self._fullSetning = liste
 
         self.opprettTemp()
         self.displayTemp()
 
     def hentListe(self, vanskelighet):
-        if (vanskelighet.lower() == "enkelt"): return ["kake", "kjeks", "tomat", "potet", "bil", "hund", "katt", "tekopp", "brus", "godteri"]
-        elif (vanskelighet.lower() == "vanskelig"): return ["vaskemaskin", "matbutikk", "sommerferie", "datamaskin", "oppvaskmiddel", "Aquarium", "Racingrally", "mobiltelefon"]
+        if (vanskelighet.lower() == "enkelt"): return random.choice(["kake", "kjeks", "tomat", "potet", "bil", "hund", "katt", "tekopp", "brus", "godteri", "bruh moment"])
+        elif (vanskelighet.lower() == "vanskelig"): return random.choice(["vaskemaskin", "matbutikk", "sommerferie", "datamaskin", "oppvaskmiddel", "Aquarium", "Racingrally", "mobiltelefon"])
         else: return []
 
 
@@ -41,6 +40,7 @@ class Hangman:
         if (self._antForsok < 6):
             print("|     /\  ")
         print()
+
 
     def displayTemp(self):
         print("\n\nDu har", self._antForsok, "antall forsok\n")
