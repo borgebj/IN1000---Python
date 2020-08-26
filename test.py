@@ -1,19 +1,10 @@
 
 
-class a:
-	def __init__(self, a):
-		self.a = a
+print("hei på deg oskar")
 
+valg = input("Hvilken banan vil du ha: ")
 
-class b:
-
-	def gjornoe(self, a):
-		for x in a.a:
-			print(x)
-
-
-
-dict = {"en":1, "to":2, "tre":3}
-a = a(dict)
-b = b()
-b.gjornoe(a)
+if valg == "brun":
+	print("Du er ekkel")
+else:
+	print("Du er kul")
