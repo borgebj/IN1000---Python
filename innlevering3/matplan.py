@@ -12,9 +12,9 @@ def hjem():
 #om beboer (satt av brukeren) er inne i ordboken ovenfor, vil programmet skrive ut matplanen deres.
     if beboer in sykehjem:
         print("\nMatplanen til kari nordmann:")
-        print("Frokost: "+sykehjem["Kari Nordmann"]["frokost"])
-        print("Lunsj: "+sykehjem["Kari Nordmann"]["lunsj"])
-        print("Middag: "+sykehjem["Kari Nordmann"]["middag"])
+        print("Frokost: "+sykehjem[beboer]["frokost"])
+        print("Lunsj: "+sykehjem[beboer]["lunsj"])
+        print("Middag: "+sykehjem[beboer]["middag"])
 #ellers vil de få bedskjed om at beboeren ikke er registrert.
     else:
         print("Beboer ikke registrert")
