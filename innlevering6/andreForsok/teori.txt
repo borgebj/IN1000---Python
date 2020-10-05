@@ -1,0 +1,13 @@
+
+1. Hva er innkapsling? Hvorfor er det nyttig?
+-
+
+2. Hva er grensesnittet til en klasse?
+Hvordan skiller det seg fra implementasjonen av en klasse?
+- Grensesnittet til en klasse er dens metoder og funksjoner
+- Det skilles fra implementasjon med at implementasjonen er koden som er inne i disse metodene, mens grenesnittet er hva klassen tilbyr
+
+3. Hva er en instansmetode og hvordan skiller dette seg fra ...
+prosedyrene/funksjonene vi har møtt hittil?
+- En instansmetode er en metode som tilhører en klasse.
+- det skiller seg fordi metoden vi før har brukt har vært uavhengig av klasser

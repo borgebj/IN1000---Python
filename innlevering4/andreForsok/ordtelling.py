@@ -19,4 +19,5 @@ ordbok = hentOrdbok(setning)
 print("\n\nDet er", len(ordbok), " unike ord i og ", len(setning.split()), "totale ord i setningen din ")
 for nokkel in ordbok:
     print("Ordet ["+nokkel+"] forekommer", ordbok[nokkel], "antall ganger, og har", hentBokstaver(nokkel), "bokstaver")
+
 print("\n---------------------------------")
