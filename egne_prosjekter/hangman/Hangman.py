@@ -42,7 +42,7 @@ class Hangman:
 
 
     def displayTemp(self):
-        print("\n\nDu har", self._antForsok, "antall forsok")
+        print("\n"*50, "\n\nDu har", self._antForsok, "antall forsok")
         print(self._feilOrd,"\n")
         self.displayMan()
         for ord in self._tempSetning:
@@ -62,6 +62,8 @@ class Hangman:
             print("\n\n", bokstav, "er feil")
         if "_ " not in self._tempSetning:
             self._gjettet = True
+        elif bokstav in self._tempSetning:
+            pass
         self.displayTemp()
 
     def hentGjettet(self):

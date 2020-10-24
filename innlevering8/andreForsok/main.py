@@ -11,7 +11,7 @@ def main():
         hovedbrett.tegnBrett()
         hovedbrett.oppdatering()
 
-        valg = input("Valg: ")
+        valg = input("Enter for å fortsette, q for å avslutte: ")
 
 # starte hovedprogrammet
 main()
