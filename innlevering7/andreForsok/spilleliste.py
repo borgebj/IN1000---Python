@@ -7,7 +7,7 @@ class Spilleliste:
         self._navn = listenavn
 
     def lesFraFil(self, filnavn):
-        fil = open(filnavn)
+        fil = open(filnavn, "r")
         for linje in fil:
             setning = linje.strip().split(";")
             self._sanger.append(Sang(setning[1], setning[0]))

@@ -7,9 +7,6 @@ class Sang:
     def spill(self):
         print("Spiller '"+self._tittel+"' av artisten", self._artist)
 
-    def hentArtist(self):
-        return self._artist
-
     def sjekkArtist(self, navn):
         navnListe = navn.split()
         artistListe = self._artist.split()

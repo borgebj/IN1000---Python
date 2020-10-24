@@ -21,6 +21,7 @@ def hovedprogram():
     print()
 
     funnetSang = allMusikk.finnSang("Mil etter mil")
+    print("boooo", funnetSang)
     if funnetSang is not None:
         allMusikk.spillSang(funnetSang)
     else:
