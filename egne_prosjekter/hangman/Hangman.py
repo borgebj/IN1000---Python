@@ -42,6 +42,7 @@ class Hangman:
 
 
     def displayTemp(self):
+        print("\n"*50)
         print("\n\nDu har", self._antForsok, "antall forsok")
         print(self._feilOrd,"\n")
         self.displayMan()
