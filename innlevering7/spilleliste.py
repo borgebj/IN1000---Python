@@ -54,6 +54,6 @@ class Spilleliste:
         artister = []
         for x in self._sanger:
             y = x.sjekkArtist(artistnavn)
-            if y == True:
+            if y:
                 artister.append(x)
         return artister
